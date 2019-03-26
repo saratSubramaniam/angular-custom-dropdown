@@ -3,7 +3,7 @@ A free reusable dropdown component for Angular 4 and above
 
 Do you want to quickly setup a dropdown list with dynamic data, optional checkbox to make your UI look better ? The angular-custom-dropdown is the one you should consider! 
 
-## Install
+## Inclusion in your project
 
 The installation or inclusion of the custom dropdown component has been kept simple. All you have to do is
 1. Download the folder 'custom-dropdown-component' and inlcude it along with your other angular components.
