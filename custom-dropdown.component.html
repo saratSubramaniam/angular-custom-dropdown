@@ -1,0 +1,16 @@
+<div class="custom-dropdown-container">
+  <div class="custom-dropdown-menu" (click)="showMenuItems = !showMenuItems">
+    <span [innerText]="selectedItem ? selectedItem[keyName] : defaultTitle"></span>
+    <i class="fa fa-angle-down"></i>
+  </div>
+  <div class="custom-menu-items-list" *ngIf="showMenuItems">
+    <div class="menu-item" *ngFor="let item of data" (click)="selectItem(item)">
+      <span class="fa" [style.display]="showCheckBox ? 'inline-block' : 'none'" [ngClass]="{'fa-check' : item.isSelected }">
+      </span>
+      <span [innerText]="item[keyName]"></span>
+    </div>
+    <div class="empty-dropdown-data" *ngIf="data.length == 0">No data to display.</div>
+  </div>
+
+  <div *ngIf="showMenuItems" class="top-bar-overlay" (click)="showMenuItems = false"></div>
+</div>
